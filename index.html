@@ -6,16 +6,29 @@
     <style>
       body{
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/a5c3c2160826493.63bba371f3569.jpg");
-        background-repeat: no-repeat; 
-   }
+    background-repeat: no-repeat;
+   } 
    .ta{
     text-align: center;
     text-decoration: double;
-     color:white;
+    color: white;
    }
    .ta2{
     text-align: center;
     color:white;
+   }
+   .header{
+    border-style: dashed;
+    border-color: azure;
+   }
+   .logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: light purple;
+   }
+   .content> p{
+    text-align: left;
+    font-family: Arial;
    }
 
     </style>
@@ -25,8 +38,61 @@
    <h1 class="ta"> Personal Portofolio</h1>
    <h2 class="ta2">Gincota Valeria</h2>
    </div>
-   <div class="content"></div>
-   <div class="footer"></div>
+   <hr>
+   <hr>
+   <div class="content">
+    <h2 class="logo">About me</h2>
+    <p>I am a student at "Orizont" Lyceum, currently in 10th grade real profile. I enjoy studying chemistry and biology the most.</p>
+    <p> In the future i would like to become a doctor because this career path appeals the most to me.</p>
+    <br>
+    <h2 class="edu">Education</h2>
+    <ol>
+        <li>1st grade- 4th grade i studied at "Vasile Vasilache" Lyceum</li>
+        <li>5th grade-9th grade i studied at " Stefan Cel Mare" Lyceum</li>
+        <li>10th grade i am currently studying at "Orizont" Lyceum</li>
+    </ol>
+    <br>
+    <h2>Skills</h2>
+    <h3>Language Programming Skills</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+    </ul>
+    <h3>Sports</h3>
+    <ul>
+        <li>Volleyball</li>
+        <li>Basketball</li>
+        <li>Ping Pong</li>
+        <li>Hockey on grass</li>
+    </ul>
+    <h3>Language Speaking Skills</h3>
+    <ul>
+        <li>English- C1</li>
+        <li>Russian- B2</li>
+        <li>Romanian- C1</li>
+        <li>Spanish- A2</li>
+    </ul>
+    <br>
+    <h2>Projects</h2>
+    <p>Managing  the Voluntary Group at The Republican Rehabilitation Centre for Children.</p>
+    <iframe src="https://www.facebook.com/profile.php?id=100077269427658&mibextid=9R9pXO" title="RRCC"></iframe>
+    <p> This Centre rehabilitates children from 0-18 years old for free and i was in charge of making the timetable of the volunatry group</p>
+    <p> I made a project about the culture of Moldova that was included in a Norwegian newspaper.</p>
+    <iframe src="https://www.aftenposten.no/av/aftenposten-junior" title="Aften Posten Junior Newspaper"></iframe>
+   </div>
+   <div class="footer">
+    <h2>Contact me </h2>
+    <label for="firstName">First name:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+    <label for="lastName">Last name:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+    <label for="freeform">Message:</label>
+    <br>
+    <textarea id="freeform" name="freeform" rows="4" cols="50">
+    </textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+   </div>
     </body> 
   </html>
-
