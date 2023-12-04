@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5; 
+            background-color: #e6e6fa; /* Light purple background */
             color: #333;
         }
 
         header {
-            background-color: #5a5a5a; 
+            background-color: #5a5a5a; /* Dark gray header */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         hr {
-            border: none; 
-            background-color: #ccc; 
-            height: 1px; 
+            border: none; /* Remove border */
+            background-color: #ccc; /* Light gray line color */
+            height: 1px; /* Set line height */
             margin: 20px 0;
         }
 
@@ -31,21 +33,21 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff; 
+            background-color: #fff; /* White content background */
             border-radius: 10px;
         }
 
         .logo, h2 {
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
-            color: #5a5a5a; 
+            color: #5a5a5a; /* Dark gray text color */
             padding: 10px;
             border-radius: 10px;
         }
 
         h2 {
-            background-color: #e6e6e6; 
-            border: none;
+            background-color: #e6e6e6; /* Light gray background for h2 */
+            border: none; /* Remove border */
             padding-bottom: 5px;
         }
 
@@ -61,7 +63,7 @@
         }
 
         footer {
-            background-color: #5a5a5a; 
+            background-color: #5a5a5a; /* Dark gray footer */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -88,13 +90,13 @@
         }
 
         input[type="submit"] {
-            background-color: #003366; 
+            background-color: #003366; /* Dark blue submit button */
             color: white;
             cursor: pointer;
         }
 
         input[type="submit"]:hover {
-            background-color: #001a33;
+            background-color: #001a33; /* Darker blue on hover */
         }
     </style>
 </head>
@@ -137,7 +139,7 @@
         </ul>
         <h2>Projects</h2>
         <p>Managing the Voluntary Group at The Republican Rehabilitation Centre for Children.</p>
-        <p>This Centre rehabilitates children from 0-18 years old for free and I was in charge of making the timetable of the voluntary group</p>
+        <p>This Centre rehabilitates children from 0-18 years old for free, and I was in charge of making the timetable of the voluntary group</p>
         <img src="https://scontent.fkiv9-2.fna.fbcdn.net/v/t39.30808-6/272885162_115664041013199_7489105072337369069_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=V5rrjZYMW5cAX9Eqk4P&_nc_ht=scontent.fkiv9-2.fna&oh=00_AfDS3miOFmdtRPxJD0ehfdI_MUBRrEs3rx4GePIMHssNLA&oe=6571BEC0">
         <p>I made a project about the culture of Moldova that was included in a Norwegian newspaper.</p>
         <p>I participated in 2017 and in 2022.</p>
@@ -148,15 +150,16 @@
         <h2>Contact me </h2>
         <form action="your_form_processing_script.php" method="post">
             <label for="firstName">First name:</label>
-            <input type="text" id="firstName" name="firstName"><br><br>
+            <input type="text" id="firstName" name="firstName" class="form-control"><br>
             <label for="lastName">Last name:</label>
-            <input type="text" id="lastName" name="lastName"><br><br>
+            <input type="text" id="lastName" name="lastName" class="form-control"><br>
             <label for="freeform">Message:</label>
-            <br>
-            <textarea id="freeform" name="freeform" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Submit">
+            <textarea id="freeform" name="freeform" rows="4" cols="50" class="form-control"></textarea><br>
+            <input type="submit" value="Submit" class="btn btn-primary">
         </form>
     </div>
-</body> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-U9r86M6VRPciFSXAZwvx3q4tz2tPU6GzzP3E7FphgjxL/kZMT5mPRu7kMC0/1Mr6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
-
