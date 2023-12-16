@@ -1,117 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-      body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e6e6fa; 
-    color: #333;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dfe6e9;
+            color: #333;
+        }
 
-header {
-    background-color: #5a5a5a; 
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        header {
+            background-color: #2d3436; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-hr {
-    border: none; 
-    background-color: #ccc; 
-    height: 1px; 
-    margin: 20px 0;
-}
+        hr {
+            border: none;
+            background-color: #b2bec3;
+            height: 1px;
+            margin: 20px 0;
+        }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff; 
-    border-radius: 10px;
-}
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
 
-.logo, h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    color: #5a5a5a; 
-    padding: 10px;
-    border-radius: 10px;
-}
+        .logo,
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: #483D8B;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
-h2 {
-    border: none; 
-    padding-bottom: 5px;
-}
+        h2 {
+            border: none;
+            padding-bottom: 5px;
+        }
 
-h2.logo {
-    background-color: #e6e6e6; 
-}
+        h2.logo {
+            background-color: #f5f5dc;
+        }
 
-h2:not(.logo):not(.ta2):not(.footer h2) {
-    background-color: #f0f0f0; 
-}
+        h2:not(.logo):not(.ta2):not(.footer h2) {
+            background-color: #e0e0e0;
+        }
 
-h2.edu {
-    background-color: #f0f0f0; 
-}
+        h2.edu {
+            background-color: #e0e0e0; 
+        }
 
-p {
-    line-height: 1.6;
-}
+        p {
+            line-height: 1.6;
+        }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
 
-footer {
-    background-color: #5a5a5a; 
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        footer {
+            background-color: #2d3436;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #ccc;
-}
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #b2bec3;
+        }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #b2bec3; 
+            border-radius: 5px;
+        }
 
-input[type="submit"] {
-    background-color: #003366; 
-    color: white;
-    cursor: pointer;
-}
+        input[type="submit"] {
+            background-color: #483D8B; 
+            color: #fff;
+            cursor: pointer;
+        }
 
-input[type="submit"]:hover {
-    background-color: #001a33; 
-}
+        input[type="submit"]:hover {
+            background-color: #4B0082;
+        }
 
+        .project-sect {
+            background-color: #f5f5dc; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .project-title {
+            color: #483D8B; 
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            color: #333;
+            line-height: 1.6;
+        }
+        .mat:active::after{
+             content:"I participated in 2020 and 2017";
+        color:#ADD8E6;
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1 class="ta"> Personal Portfolio</h1>
@@ -120,7 +148,8 @@ input[type="submit"]:hover {
     <hr>
     <div class="content">
         <h2 class="logo">About me</h2>
-        <p>I am a student at "Orizont" Lyceum, currently in 10th grade real profile. I enjoy studying chemistry and biology the most.</p>
+        <p>I am a student at "Orizont" Lyceum, currently in 10th grade real profile. I enjoy studying chemistry and
+            biology the most.</p>
         <p>In the future, I would like to become a doctor because this career path appeals the most to me.</p>
         <h2 class="edu">Education</h2>
         <ol>
@@ -149,13 +178,28 @@ input[type="submit"]:hover {
             <li>Romanian- C1</li>
             <li>Spanish- A2</li>
         </ul>
-        <h2>Projects</h2>
-        <p>Managing the Voluntary Group at The Republican Rehabilitation Centre for Children.</p>
-        <p>This Centre rehabilitates children from 0-18 years old for free, and I was in charge of making the timetable of the voluntary group</p>
-        <img src="https://scontent.fkiv9-2.fna.fbcdn.net/v/t39.30808-6/272885162_115664041013199_7489105072337369069_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=V5rrjZYMW5cAX9Eqk4P&_nc_ht=scontent.fkiv9-2.fna&oh=00_AfDS3miOFmdtRPxJD0ehfdI_MUBRrEs3rx4GePIMHssNLA&oe=6571BEC0">
-        <p>I made a project about the culture of Moldova that was included in a Norwegian newspaper.</p>
-        <p>I participated in 2017 and in 2022.</p>
-        <iframe src="https://kundeportal.aftenposten.no/aftenposten-junior-derfor-er-nyheter-viktig/" width="100%" height="500" style="border:1px solid black;" title="Aften Posten Junior Newspaper"></iframe>
+        <div class="project-sect">
+            <h2 class="project-title">Projects</h2>
+            <div class="project-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8SDYZiR8l10y4OadFgTkqjGe-G3GhYJq8CLLxyDdjAx5EaOajZZpvlKLU33hx03WApQQ&usqp=CAU" alt="Project Image">
+                <div class="project-desc">
+                    <p>Managing the Voluntary Group at The Republican Rehabilitation Centre for Children.</p>
+                    <p>This Centre rehabilitates children from 0-18 years old for free, and I was in charge of making the
+                        timetable of the voluntary group</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://play-lh.googleusercontent.com/5Hdt16lTVioKqpOgqXHk1tpiuyLc9VL8bsKjLVK4oolgfuWmNrl0VW-UdjOwFAe_gA">
+                <div class="project-desc">
+                    <div class="mat">
+                    <p>I made a project about the culture of Moldova that was included in a Norwegian newspaper.</p>
+                    </div>
+                    <iframe src="https://kundeportal.aftenposten.no/aftenposten-junior-derfor-er-nyheter-viktig/"
+                        width="100%" height="300" style="border:1px solid black;" title="Aften Posten Junior
+                        Newspaper"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
     <hr>
     <div class="footer">
@@ -170,9 +214,9 @@ input[type="submit"]:hover {
             <input type="submit" value="Submit" class="btn btn-primary">
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-U9r86M6VRPciFSXAZwvx3q4tz2tPU6GzzP3E7FphgjxL/kZMT5mPRu7kMC0/1Mr6" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-U9r86M6VRPciFSXAZw
 
